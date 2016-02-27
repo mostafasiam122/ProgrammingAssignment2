@@ -1,8 +1,9 @@
-## This code should help avoid redundant heavy computational costs of matrix
-## .. inversion .. The fisrt function prompts to input the matrix and can work
-## .. in parallel with second function (calculation of the matrix inversion)
+## This code should help to avoid redundant heavy computational costs of matrix
+## .. inversion .. The fisrt function prompts the user to input the matrix and can work
+## .. in parallel with second function (calculation of the matrix inversion).
+## Please note that the matrix has to be square and non-singular. 
 ## If the matrix inverse has not changed from previuos attempts, the output will 
-## .. notify the user that a cashed result is being reported
+## .. notify the user that a cashed result is being reported.
 ## Please see the examples after the code hereafter
 ## Try it out and have fun guys :)
 
