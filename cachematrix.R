@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## This code should help avoid redundant heavy computational costs of matrix
+## .. inversion .. The fisrt function prompts to input the matrix and can work
+## .. in parallel with second function (calculation of the matrix inversion)
+## If the matrix inverse has not changed from previuos attempts, the output will 
+## .. notify the user that a cashed result is being reported
+## Please see the examples after the code hereafter
+## Try it out and have fun guys :)
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -30,3 +33,17 @@ cacheSolve <- function(x, ...) {
     x$setinverse(inv)
     inv
 }
+
+## Examples
+## Try these out!
+## new_matrix <- makeCacheMatrix(matrix(1:16, 4, 4)) ... Has to be a squre matrix 
+## new_matrix$get() ... This will get the values of the matrix and store it
+## new_matrix$getinverse() This will return Null because not stored inverse yet
+## cashsolve(new_matrix) ... This will return matrix inverse and cash it
+## cashsolve(new_matrix) ... This will return the same value with a message notifying the 
+## ... user that a cashed value is being returned
+## new_matrix$set(matrix(1:9,3,3)) ... Set a new value for the matrix and deletes
+## ... the cashed value of the cashed matrix inverse
+## new_matrix$getinverse()... will return Null as the stored (cashed) matrix inverse is deleted 
+## cashsolve(new_matrix) ... new values for the inverse
+## have fun guys :)
