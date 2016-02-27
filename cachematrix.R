@@ -2,9 +2,10 @@
 ## .. inversion .. The fisrt function prompts the user to input the matrix and can work
 ## .. in parallel with second function (calculation of the matrix inversion).
 ## Please note that the matrix has to be square and non-singular. 
+## Non-singular matrix should have a non zero determinate. Check with det().
 ## If the matrix inverse has not changed from previuos attempts, the output will 
 ## .. notify the user that a cashed result is being reported.
-## Please see the examples after the code hereafter
+## Please see the examples after the code hereafter.
 ## Try it out and have fun guys :)
 
 makeCacheMatrix <- function(x = matrix()) {
